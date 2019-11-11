@@ -1,0 +1,5 @@
+---
+namespace: thoth-test-core
+postgresql_user: thoth
+postgresql_password: thoth
+postgresql_database: postgres
