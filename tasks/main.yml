@@ -90,7 +90,7 @@
               livenessProbe:
                 failureThreshold: 3
                 httpGet:
-                  path: /metrics
+                  path: /liveness
                   port: 9187
                   scheme: HTTP
                 initialDelaySeconds: 5
@@ -100,7 +100,7 @@
               readinessProbe:
                 failureThreshold: 3
                 httpGet:
-                  path: /metrics
+                  path: /readiness
                   port: 9187
                   scheme: HTTP
                 initialDelaySeconds: 5
